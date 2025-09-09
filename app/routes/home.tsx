@@ -702,12 +702,12 @@ export default function ImprovedHome() {
           <div className="text-center">
             <div className="flex items-center justify-center mb-6">
               <img src="/padel-logo.svg" alt="Padel Logo" className="h-16 w-16 mr-4" />
-              <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                PadelClubs.com.au
+              <div className="text-3xl font-bold bg-gradient-to-r from-emerald-800 to-emerald-700 bg-clip-text text-transparent">
+                Padel Clubs
               </div>
             </div>
             <p className="text-xl text-gray-300 mb-4">Your Home for Padel in Australia</p>
-            <p className="text-gray-400 mb-12 text-lg">The world's fastest growing sport is coming to Australia</p>
+            <p className="text-gray-400 mb-12 text-lg">The world's fastest growing Padel clubs is coming to Australia</p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
               <a href="#register" className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">Register Interest</a>
               <a href="#contact" className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">Partnerships</a>
@@ -715,7 +715,7 @@ export default function ImprovedHome() {
               <a href="#contact" className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">Contact</a>
             </div>
             <div className="border-t border-gray-800 pt-8">
-              <p className="text-gray-500 text-sm">© 2024 PadelClubs.com.au. All rights reserved.</p>
+              <p className="text-gray-500 text-sm">© 2025 PadelClubs.com.au. All rights reserved.</p>
             </div>
           </div>
         </div>
