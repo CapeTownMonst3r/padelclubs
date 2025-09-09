@@ -163,20 +163,6 @@ export default function ImprovedHome() {
             ))}
           </div>
 
-          {/* Video/Visual Section */}
-          <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-3xl p-8 md:p-12 text-center">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">See Padel in Action</h3>
-            <p className="text-lg text-gray-600 mb-8">Watch how the walls change everything</p>
-            <div className="bg-gray-200 rounded-2xl h-64 md:h-80 flex items-center justify-center">
-              <div className="text-gray-500 text-center">
-                <svg className="w-16 h-16 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                </svg>
-                <p className="text-lg font-semibold">Video Coming Soon</p>
-                <p className="text-sm">Professional padel demonstration</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
