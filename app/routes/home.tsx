@@ -28,12 +28,44 @@ export default function ImprovedHome() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
-    // Reset form after 3 seconds
-    setTimeout(() => setIsSubmitted(false), 3000);
+    
+    try {
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log('Form submitted successfully:', result);
+        setIsSubmitted(true);
+        // Reset form after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            location: "",
+            experience: [],
+            heardAbout: "",
+            other: ""
+          });
+        }, 5000);
+      } else {
+        const error = await response.json();
+        console.error('Form submission failed:', error);
+        alert('Sorry, there was an error submitting your registration. Please try again.');
+      }
+    } catch (error) {
+      console.error('Network error:', error);
+      alert('Sorry, there was a network error. Please check your connection and try again.');
+    }
   };
 
   return (
